@@ -1,0 +1,43 @@
+
+.navigation-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('C:\Users\boogd\My-Moodly\My-Moodly\my-moodly\public\assets\images\MoodlyBackground2.png');
+    background-position: center right; /* Aligns image to the right */
+    background-size: cover;
+    color: #f0f0f5;
+}
+
+.navigation-content {
+    display: flex;
+    align-items: right;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-left: 700px;
+}
+
+.menu button {
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    font-family: Judson;
+    font-size: 1.7rem;
+    font-weight: normal;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.menu button:hover {
+    color: #a4d6c2;
+}

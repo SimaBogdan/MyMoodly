@@ -1,0 +1,5 @@
+rootProject.name = 'my_moodly'
+include 'Model'
+include 'Persistence'
+include 'RestServices'
+

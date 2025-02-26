@@ -1,0 +1,266 @@
+/* Stilizare pentru toate casetele */
+.rectangle-28, .task-input, .add-task-button {
+  width: 80%; /* Lățimea la 80% din containerul părinte (poți ajusta această valoare) */ 
+  max-width: 600px;
+  max-width: 400px; /* Exemplu de lățime maximă */
+  margin: 10px auto; /* Centrare pe orizontală */
+  padding: 15px;
+  text-align: center; /* Centrarea textului pe orizontală */
+  border-radius: 100px; /* Colțuri rotunjite pentru stil uniform */
+  background-color: rgba(133, 133, 133, 0.3); /* Black color with 30% opacity */
+  border: 1px solid #ccc; /* Bordură gri pentru casetă */
+  box-sizing: border-box; /* Include padding-ul în dimensiuni */
+  display: flex; /* Flexbox pentru centrare verticală */
+  align-items: center; /* Centrare verticală */
+  justify-content: center; /* Centrare orizontală */
+  padding: 15px; /* Spațiu interior */
+  margin: 10px 0; /* Spațiu între casete */
+  width: 80%; /* Lățimea la 80% din containerul părinte (poți ajusta această valoare) */
+  max-width: 600px; /* Lățimea maximă a casetelor */
+  margin-left: auto; /* Centrează caseta pe orizontală */
+  margin-right: auto;
+  overflow-y: auto;
+}
+
+/* Modificarea culorii pentru header */
+.tasks {
+  color: #201937; /* Schimbă culoarea textului aici, înlocuiește cu orice cod de culoare dorești */
+  font-size: 64px;
+  font-family: 'Judson', serif;
+  text-align: center; /* Sau altă aliniere dorită */
+  overflow-y: auto;
+}
+
+.rectangle-28 {
+  color: #ffffff;  /* Schimbă culoarea textului (ex: alb) */
+  font-size: 23px;  /* Schimbă dimensiunea textului */
+  font-family: 'Judson', serif;  /* Schimbă fontul */
+  text-align: center;  /* Centrează textul pe orizontală */
+  line-height: 1.5;  /* Adaugă mai mult spațiu între rânduri */
+  padding: 10px;  /* Poți adăuga un pic de padding pentru mai mult spațiu în jurul textului */
+}
+
+.rectangle-28:hover {
+  background-color: #de81e9;
+  cursor: pointer;
+}
+
+/* Stilizare pentru input */
+.task-input {
+  font-size: 16px;
+  color: #340707;
+  font-family: 'Judson', serif;
+  transition: border-color 0.3s ease;
+}
+
+/* Stilizare pentru textul placeholder din câmpul de input */
+.task-input::placeholder {
+  font-size: 23px; 
+  font-family: 'Judson', serif;
+}
+
+/* Efect de focus pe input */
+.task-input:focus {
+  border-color: #b5afe8;
+  outline: none;
+}
+/* Adaugă fundal pe întreaga pagină */
+.home-page {
+  background-image: url('C:\Users\boogd\My-Moodly\My-Moodly\my-moodly\public\assets\images\MoodlyBackground2.png'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  border: none;
+  display: block;
+  margin: 0;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  width: 100vw;
+  height: 100vh; 
+  overflow-y: auto;
+}
+
+/* Stiluri pentru butonul de meniu */
+.menu-button {
+  position: absolute;
+  top: 20px; /* Plasat deasupra paginii */
+  right: 20px; /* Plasat pe marginea dreaptă */
+  display: flex;
+  flex-direction: column; /* Plasăm casetele una sub alta */
+  gap: 1mm; /* Spațiu de 1mm între fiecare casetă */
+  cursor: pointer; /* Arată cursorul ca pointer când se trece cu mouse-ul pe buton */
+}
+
+.menu-box {
+  width: 25px; /* Lățimea fiecărei casete */
+  height: 5px; /* Înălțimea fiecărei casete */
+  background-color: #de81e9; /* Culoare pentru casete */
+  border-radius: 3px; /* Colțuri rotunjite */
+}
+
+.menu-button:hover .menu-box {
+  background-color: #9b56d4; /* Schimbă culoarea când treci cu mouse-ul */
+}
+
+/* Meniu */
+.menu {
+  position: absolute;
+  top: 50px;  /* Puțin mai jos de butonul de meniu */
+  right: 20px;
+  background-color: #8b97ff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 10;  /* Asigură-te că meniul este deasupra altor elemente */
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.menu li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Stil pentru butonul de ștergere */
+.delete-task-button {
+  background-color: transparent;
+  color: rgb(71, 107, 136);
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 5px;
+  margin-left: 10px;
+  transition: color 0.3s ease;
+}
+
+/* Efect de hover pe butonul de ștergere */
+.delete-task-button:hover {
+  color: darkred;
+}
+
+/* Stilizare suplimentară pentru containerul de inputuri și butonul "Add Task" */
+.task-input {
+  width: 80%;
+  max-width: 600px;
+  margin: 10px auto;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #cccccc;
+}
+
+/* Aliniere pentru checkbox-ul "Repeat" și butonul "Add Task" */
+label {
+  display: block;
+  margin: 10px auto;
+  font-family: 'Judson', serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Asigurăm un aspect mai uniform pentru butonul "Add Task" */
+.add-task-button {
+  color: #ffffff;  /* Schimbă culoarea textului (ex: alb) */
+  font-size: 23px;  /* Schimbă dimensiunea textului */
+  font-family: 'Judson', serif;  /* Schimbă fontul */
+  text-align: center;  /* Centrează textul pe orizontală */
+  line-height: 1.5;  /* Adaugă mai mult spațiu între rânduri */
+  padding: 10px;  /* Poți adăuga un pic de padding pentru mai mult spațiu în jurul textului */
+}
+
+.add-task-button {
+  display: flex; /* Folosim flexbox pentru a organiza elementele în interior */
+  flex-direction: column; /* Așezăm elementele pe verticală */
+  justify-content: center; /* Aliniere verticală */
+  align-items: center; /* Aliniere orizontală */
+  padding: 15px;
+  margin: 10px auto;
+  max-width: 600px;
+  width: 80%;
+  background-color: rgba(133, 133, 133, 0.3);
+  border-radius: 100px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Efecte de hover și focus pe butonul "Add Task" */
+.add-task-button:hover {
+  background-color: #de81e9;
+  
+}
+
+.add-task-button:focus {
+  outline: none;
+
+  box-shadow: 0 0 0 3px rgba(200, 162, 255, 0.5);
+}
+.rectangle-28 {
+  display: flex; /* Folosim flexbox pentru a organiza elementele în interior */
+  flex-direction: column; /* Așezăm elementele pe verticală */
+  justify-content: center; /* Aliniere verticală */
+  align-items: center; /* Aliniere orizontală */
+  padding: 15px;
+  margin: 10px auto;
+  max-width: 600px;
+  width: 80%;
+  background-color: rgba(133, 133, 133, 0.3);
+  border-radius: 100px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Optional, stil pentru a îmbunătăți separarea taskului și duratei */
+.rectangle-28 span {
+  margin-bottom: 5px; /* Adăugăm puțin spațiu între task și durată */
+}
+
+/* Casetă pentru butonul de repeat */
+.repeat-container {
+  width: 80%; /* Lățimea la 80% din containerul părinte */
+  max-width: 400px; /* Lățime maximă pentru a păstra uniformitatea */
+  margin: 10px auto; /* Centrarea pe orizontală */
+  padding: 10px;
+  background-color: rgba(133, 133, 133, 0.3); /* Fundal asemănător cu cel al task-urilor */
+  border: 1px solid #ccc; /* Bordură similară */
+  border-radius: 10px; /* Colțuri rotunjite */
+  display: flex; /* Folosim flexbox pentru a alinia butonul */
+  justify-content: center; /* Centrarea pe orizontală */
+  align-items: center; /* Centrarea pe verticală */
+  box-sizing: border-box; /* Include padding-ul în dimensiuni */
+}
+
+/* Stilizare pentru butonul de repeat */
+.repeat-container label {
+  font-size: 16px;
+  font-family: 'Judson', serif;
+  color: #201937; /* Culoare text */
+}
+
+.repeat-container input[type="checkbox"] {
+  margin-left: 10px;
+  cursor: pointer;
+  transform: scale(1.2); /* Mărim puțin checkbox-ul */
+}
+
+/* Efect de hover pe checkbox */
+.repeat-container input[type="checkbox"]:hover {
+  transform: scale(1.3); /* Crește dimensiunea checkbox-ului la hover */
+}
+
+/* Adăugăm puțin spațiu între task-uri și butonul de repeat */
+.task-input, .task-duration, .repeat-container {
+  margin-bottom: 10px;
+}

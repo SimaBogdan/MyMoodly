@@ -1,0 +1,96 @@
+.background {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('C:\Users\boogd\My-Moodly\My-Moodly\my-moodly\public\assets\images\MyMoodlyBackground.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    border: none;
+    display: block;
+    margin: 0;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    width: 100vw;
+    height: 100vh;
+}
+
+.text {
+    pointer-events: none;
+    box-sizing: border-box;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Judson';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+    margin: 0;
+    color: #FFFFFF;
+    bottom: 100px;
+    padding-left: 50px;
+    
+}
+
+
+.sentence{
+    margin: 5px 0;
+    
+}
+
+.highlight {
+    color: #b2a2ff; /* Change this to any color you like */
+}
+
+.formContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* vh stands for viewport height */
+    padding-top: 150px;
+    padding-left: 50px;
+    z-index: 1;
+}
+
+.inputBox {
+    display: block;
+    margin-bottom: 20px;
+    z-index: 2;
+    box-sizing: border-box;
+    width: 254px;
+    height: 39px;
+    background: rgba(217, 217, 217, 0.4);
+    border: 1px solid #000000;
+    border-radius: 50px;
+    padding: 0 20px;
+    color: white;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.button {
+    box-sizing: border-box;
+    position: absolute;
+    width: 129px;
+    height: 35px;
+    background: rgba(132, 190, 173, 0.8);
+    border: 1px solid #84BEAD;
+    border-radius: 30px;
+    bottom: 60px;
+    right: 150px;
+    color: white;
+    font-family: 'Judson';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    cursor: pointer;
+}

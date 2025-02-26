@@ -1,0 +1,110 @@
+.background {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('C:\Users\boogd\My-Moodly\My-Moodly\my-moodly\public\assets\images\MyMoodlyBackground.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    border: none;
+    display: block;
+    margin: 0;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    width: 100vw;
+    height: 100vh;
+}
+
+.text {
+    box-sizing: border-box;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Judson';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+    margin: 0;
+    color: #FFFFFF;
+    bottom: 230px;
+    padding-left: 35px;
+}
+
+
+.sentence{
+    margin: 5px 0;
+    
+}
+
+.highlight {
+    color: #b2a2ff; /* Change this to any color you like */
+}
+
+.coloredText{
+    box-sizing: border-box;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Judson';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 55px;
+    margin: 0;
+    color: #b2a2ff;
+    bottom: 25px;
+    padding-left: 35px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.buttonUp{
+    box-sizing: border-box;
+    position: absolute;
+    width: 328px;
+    height: 55px;
+    background: #84BEAD;
+    border: 1px solid #84BEAD;
+    border-radius: 80px;
+    color: white;
+    font-family: 'Judson';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    top: 500px;
+    left: 630px;
+    cursor: pointer;
+}
+
+.buttonDown{
+    box-sizing: border-box;
+    position: absolute;
+    width: 328px;
+    height: 55px;
+    background: rgba(217, 217, 217, 0.5);
+    border: 1px solid #000000;
+    border-radius: 80px;
+    color: white;
+    font-family: 'Judson';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    top: 575px;
+    left: 630px;
+    cursor: pointer;
+}
+
